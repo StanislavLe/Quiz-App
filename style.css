@@ -1,0 +1,25 @@
+body {
+    background-color: aqua !important;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.questionFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    width: 28rem;
+} 
+
+.quizCard {
+    width: 30rem !important;
+}
