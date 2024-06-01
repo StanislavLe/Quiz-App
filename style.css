@@ -29,3 +29,8 @@ body {
     padding-left: 32px;
     padding-top: 16px;
 }
+
+.cardAnswer:hover {
+cursor: pointer;
+background-color: rgba(0, 0, 0, 0.05);
+}

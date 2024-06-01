@@ -12,7 +12,7 @@
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
+<body onload="render()">
 
   <h1 class="myH1">Quiz App</h1>
 
@@ -21,26 +21,26 @@
       <img src="./img/quizBackground.jpg" class="card-img-top" alt="...">
       <div class="card-body quizCard">
         <h5 class="card-title">Frage</h5>
-        <p id="question" class="card-text"></p>
+        <p id="questionField" class="card-text"></p>
 
-        <div class="card mb-2 card-body">
+        <div class="card mb-2 cardAnswer card-body" onclick="answer('answer1')">
           <p id="answer1"></p>
         </div>
 
-        <div class="card mb-2 card-body">
+        <div class="card mb-2 cardAnswer card-body" onclick="answer('answer2')">
           <p id="answer2"></p>
         </div>
 
-        <div class="card mb-2 card-body">
+        <div class="card mb-2 cardAnswer card-body" onclick="answer('answer3')">
           <p id="answer3"></p>
         </div>
 
-        <div class="card mb-2 card-body">
+        <div class="card mb-2 cardAnswer card-body" onclick="answer('answer4')">
           <p id="answer4"></p>
         </div>
 
         <div class="questionFooter"></div>
-        <b>1</b> von <b>10</b> Fragen
+        <b id="currentQuestion"></b> von <b id="questionListLength"></b> Fragen
         <button>Nächste Frage</button>
 
       </div>
