@@ -14,38 +14,35 @@
 
 <body>
 
-  <h1>Quiz App</h1>
+  <h1 class="myH1">Quiz App</h1>
 
-  <div class="container quizCard">
-    <div class="card quizCard" style="width: 18rem;">
+  <div class="container">
+    <div class="card" style="width: 30rem;">
       <img src="./img/quizBackground.jpg" class="card-img-top" alt="...">
       <div class="card-body quizCard">
         <h5 class="card-title">Frage</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <div class="card mb-2">
-          <div class="card-body quizCard">
-            This is some text within a card body.
-          </div>
+        <p id="question" class="card-text"></p>
+
+        <div class="card mb-2 card-body">
+          <p id="answer1"></p>
         </div>
-        <div class="card mb-2">
-          <div class="card-body quizCard">
-            This is some text within a card body.
-          </div>
+
+        <div class="card mb-2 card-body">
+          <p id="answer2"></p>
         </div>
-        <div class="card mb-2">
-          <div class="card-body quizCard">
-            This is some text within a card body.
-          </div>
+
+        <div class="card mb-2 card-body">
+          <p id="answer3"></p>
         </div>
-        <div class="card mb-2">
-          <div class="card-body quizCard">
-            This is some text within a card body.
-          </div>
+
+        <div class="card mb-2 card-body">
+          <p id="answer4"></p>
         </div>
+
         <div class="questionFooter"></div>
-        <b>1</b> von <b>5</b> Fragen
+        <b>1</b> von <b>10</b> Fragen
         <button>Nächste Frage</button>
+
       </div>
     </div>
   </div>
