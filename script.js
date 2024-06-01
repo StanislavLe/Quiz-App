@@ -1,63 +1,90 @@
 let questions = [
     {
-        "frage": "Wer hat Html erfunden?",
-        "antwort1": "JustinBiber",
-        "antwort2": "AndrewTate",
-        "antwort3": "Tim Berners-Lee",
-        "antwort4": "ThomasLee",
-        "rightAnswer": 3
+        "frage": " Welcher pH-Wert des Wassers ist optimal für den Anbau von Cannabis in Erde?",
+        "antwort1": "5.0",
+        "antwort2": "6.5",
+        "antwort3": "7.5",
+        "antwort4": "8.0",
+        "rightAnswer": 2
     },
 
     {
-        "frage": "Woher kommt das i in der for Schleife?",
-        "antwort1": "index",
-        "antwort2": "inshaAllah",
-        "antwort3": "interlaken",
-        "antwort4": "insburg",
-        "rightAnswer": 1
+        "frage": " Was kann passieren, wenn der pH-Wert des Wassers zu niedrig ist?",
+        "antwort1": "Verbessertes Nährstoffaufnahme",
+        "antwort2": "Blockade von Nährstoffen",
+        "antwort3": "Erhöhte Wachstumsgeschwindigkeit",
+        "antwort4": "Keine Auswirkungen",
+        "rightAnswer": 2
     },
 
     {
-        "frage": "wo kann man seine projekte hochladen?",
-        "antwort1": "iCloud",
-        "antwort2": "Github",
-        "antwort3": "Facebook",
-        "antwort4": "Tinder",
+        "frage": "Was beschreibt der VPD-Wert im Cannabisanbau?",
+        "antwort1": "Verhältnis von Lichtintensität zu Pflanzenhöhe",
+        "antwort2": "Differenz zwischen Luftfeuchtigkeit und Sättigungsfeuchtigkeit",
+        "antwort3": "pH-Wert des Bodens",
+        "antwort4": "Menge des zugeführten CO2",
         "rightAnswer": 2
     },
     {
-        "frage": "Was ist ein Terminal?",
-        "antwort1": "ausführung von befehlen",
-        "antwort2": "die eingabe von Befehlen ",
-        "antwort3": "das Feld zum eingeben von Befehlen",
-        "antwort4": "Toastbrot",
+        "frage": "Welcher VPD-Wert wird für die Blütephase von Cannabis empfohlen?",
+        "antwort1": "0.2 kPa",
+        "antwort2": "0.8 kPa",
+        "antwort3": "1.2 kPa",
+        "antwort4": "2.5 kPa",
         "rightAnswer": 3
     },
 
     {
-        "frage": "was bedeutet display:Flex?",
-        "antwort1": "anordnung von Elementen",
-        "antwort2": "neue Konsole",
-        "antwort3": "Tim Berners-Lee",
-        "antwort4": "ThomasLee",
+        "frage": "Welches Symptom ist typisch für Stickstoffmangel bei Cannabispflanzen?",
+        "antwort1": "Gelbe Blätter an den unteren Teilen der Pflanze",
+        "antwort2": "Braun verfärbte Blattspitzen",
+        "antwort3": "Weiße Flecken auf den Blättern",
+        "antwort4": "Verwelkte Blüten",
         "rightAnswer": 1
     },
 
     {
-        "frage": "Wer hip hop geprägt?",
-        "antwort1": "JustinBiber",
-        "antwort2": "AndrewTate",
-        "antwort3": "Tim Berners-Lee",
-        "antwort4": "2Pac",
-        "rightAnswer": 4
+        "frage": "Was könnte ein Zeichen für einen Überschuss an Kalium sein?",
+        "antwort1": "Dunkelgrüne, glänzende Blätter",
+        "antwort2": "Eingekrümmte Blattspitzen und Ränder",
+        "antwort3": "Zähe, verdickte Stängel",
+        "antwort4": "Langsames Wachstum",
+        "rightAnswer": 2
     },
 
     {
-        "frage": "Wo ist die information zu den templates zu finden?",
-        "antwort1": "JustinBiber",
-        "antwort2": "html",
-        "antwort3": "css",
-        "antwort4": "script",
-        "rightAnswer": 4
+        "frage": "Welche Lichtfarbe fördert hauptsächlich das vegetative Wachstum von Cannabispflanzen?",
+        "antwort1": "Rot",
+        "antwort2": "Blau",
+        "antwort3": "Grün",
+        "antwort4": "Gelb",
+        "rightAnswer": 2
+    },
+
+    {
+        "frage": "Welches Medium wird oft verwendet, um die Wurzeln von Cannabispflanzen zu belüften?",
+        "antwort1": "Perlit",
+        "antwort2": "Sand",
+        "antwort3": "Ton",
+        "antwort4": "Lehm",
+        "rightAnswer": 1
+    },
+
+    {
+        "frage": "Welche Technik wird angewendet, um Cannabispflanzen in kleinere, handlichere Formen zu zwingen?",
+        "antwort1": "Topping",
+        "antwort2": "Flushing",
+        "antwort3": "Cloning",
+        "antwort4": "Lollipopping",
+        "rightAnswer": 1
+    },
+
+    {
+        "frage": "Was ist ein häufiges Anzeichen für Wurzelfäule?",
+        "antwort1": "Weiße, gesunde Wurzeln",
+        "antwort2": "Braun verfärbte und schleimige Wurzeln",
+        "antwort3": "Schnell wachsendes Wurzelsystem",
+        "antwort4": "Vermehrtes Blattwachstum",
+        "rightAnswer": 2
     }
 ]
