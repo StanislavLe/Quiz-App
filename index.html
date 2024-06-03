@@ -26,13 +26,18 @@
 
         <div class="card mb-2 card-body" id="endScreen" style="display:none;">
           <div class="textCenter">
-          <p>Quiz Beendet</p>
-          <img src="./img/trophy.JPEG" class="width100">
-          <div class="textCenter displayFlex">
-          <p class="endText">Du hast <b id="rightAnswers"></b> von <b id="questionListLength2"></b> Fragen richtig beantwortet</p>
+            <p>Quiz Beendet</p>
+            <img src="./img/trophy.JPEG" class="width100">
+            <div class="textCenter displayFlex">
+              <p class="endText">Du hast <b id="rightAnswers"></b> von <b id="questionListLength2"></b> Fragen richtig
+                beantwortet</p>
+              <div class="btnCenter">
+                <button onclick="restartGame()" class="btn btn-primary" id="nextGame" >Erneut
+                  Spielen</button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
 
         <div id="questionBody" style="">
           <div class="card mb-2 cardAnswer card-body" onclick="answer('answer1')">
@@ -54,6 +59,11 @@
           <div class="questionFooter"></div>
           <b id="questionNumber"></b> von <b id="questionListLength"></b> Fragen
           <button onclick="nextQuestion()" class="btn btn-primary" id="next-button" disabled>Nächste Frage</button>
+        </div>
+
+        <div class="progress" role="progressbar">
+          <div id="progress-bar" class="progress-bar" style="width: 0%"></div>
+
         </div>
       </div>
     </div>

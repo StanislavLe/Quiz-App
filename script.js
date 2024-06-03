@@ -90,7 +90,6 @@ let questions = [
 ]
 
 let rightQuestions = 0;
-
 let currentQuestion = 0;
 
 
@@ -104,6 +103,11 @@ function showQuestion() {
     if (currentQuestion >= questions.length) {
         showEndscreen();
     } else {
+        let percent = (currentQuestion + 1) / questions.length;
+        percent = Math.round(percent * 100);
+        document.getElementById('progress-bar').innerHTML = `${percent}%`;
+        document.getElementById('progress-bar').style = `width: ${percent}%`;
+        console.log('fortschritt', percent)
         let question = questions[currentQuestion];
         document.getElementById('questionNumber').innerHTML = currentQuestion + 1;
         document.getElementById('questionField').innerHTML = question['question'];
@@ -134,7 +138,7 @@ function answer(selection) {
     let idOfRightAnswer = `answer${question['rightAnswer']}`;
     if (selectedQuestionNumber == question['rightAnswer']) {
         document.getElementById(selection).parentNode.classList.add('bg-success');
-        rightQuestions ++;
+        rightQuestions++;
     } else {
         document.getElementById(selection).parentNode.classList.add('bg-danger');
         document.getElementById(idOfRightAnswer).parentNode.classList.add('bg-success');
@@ -162,4 +166,15 @@ function resetAnswerButtons() {
     document.getElementById('answer4').parentNode.classList.remove('bg-success');
 }
 
+
+function restartGame() {
+    document.getElementById('endScreen').style = 'display: none;';
+    document.getElementById('questionBody').style = '';
+    document.getElementById('questionField').style = '';
+    document.getElementById('cardTitel').style = '';
+    document.getElementById('quizBackground').style = '';
+    rightQuestions = 0;
+    currentQuestion = 0;
+    render();
+}
 
