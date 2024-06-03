@@ -17,32 +17,44 @@
   <h1 class="myH1">Quiz App</h1>
 
   <div class="container">
+
     <div class="card" style="width: 30rem;">
-      <img src="./img/quizBackground.jpg" class="card-img-top" alt="...">
+      <img id="quizBackground" src="./img/quizBackground.jpg" class="card-img-top" alt="...">
       <div class="card-body quizCard">
-        <h5 class="card-title">Frage</h5>
+        <h5 id="cardTitel" class="card-title">Frage</h5>
         <p id="questionField" class="card-text"></p>
 
-        <div class="card mb-2 cardAnswer card-body" onclick="answer('answer1')">
-          <p id="answer1"></p>
+        <div class="card mb-2 card-body" id="endScreen" style="display:none;">
+          <div class="textCenter">
+          <p>Quiz Beendet</p>
+          <img src="./img/trophy.JPEG" class="width100">
+          <div class="textCenter displayFlex">
+          <p class="endText">Du hast <b id="rightAnswers"></b> von <b id="questionListLength2"></b> Fragen richtig beantwortet</p>
         </div>
+      </div>
+      </div>
 
-        <div class="card mb-2 cardAnswer card-body" onclick="answer('answer2')">
-          <p id="answer2"></p>
+        <div id="questionBody" style="">
+          <div class="card mb-2 cardAnswer card-body" onclick="answer('answer1')">
+            <p id="answer1"></p>
+          </div>
+
+          <div class="card mb-2 cardAnswer card-body" onclick="answer('answer2')">
+            <p id="answer2"></p>
+          </div>
+
+          <div class="card mb-2 cardAnswer card-body" onclick="answer('answer3')">
+            <p id="answer3"></p>
+          </div>
+
+          <div class="card mb-2 cardAnswer card-body" onclick="answer('answer4')">
+            <p id="answer4"></p>
+          </div>
+
+          <div class="questionFooter"></div>
+          <b id="questionNumber"></b> von <b id="questionListLength"></b> Fragen
+          <button onclick="nextQuestion()" class="btn btn-primary" id="next-button" disabled>Nächste Frage</button>
         </div>
-
-        <div class="card mb-2 cardAnswer card-body" onclick="answer('answer3')">
-          <p id="answer3"></p>
-        </div>
-
-        <div class="card mb-2 cardAnswer card-body" onclick="answer('answer4')">
-          <p id="answer4"></p>
-        </div>
-
-        <div class="questionFooter"></div>
-        <b id="currentQuestion"></b> von <b id="questionListLength"></b> Fragen
-        <button>Nächste Frage</button>
-
       </div>
     </div>
   </div>

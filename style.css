@@ -42,3 +42,20 @@ background-color: rgba(0, 0, 0, 0.05);
 .bg-danger {
     color: white !important;
 }
+
+.width100 {
+    width: 100%;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.displayFlex {
+    display: flex;
+    justify-content: center;
+}
+
+.endText {
+    margin-top: 2rem;
+}
