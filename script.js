@@ -1,4 +1,4 @@
-let questions = [
+ let questions = [
     {
         "question": " Welcher pH-Wert des Wassers ist optimal für den Anbau von Cannabis in Erde?",
         "answer1": "5.0",

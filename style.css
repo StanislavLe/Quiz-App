@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(146, 223, 101) !important;
+    background-image: url('./img/background.jpg');
+    font-family: 'Raleway', sans-serif;
 }
 
 .container {
@@ -7,7 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 24px;
+    padding-top: 8px;
     padding-bottom: 24px;
 }
 
@@ -15,19 +16,27 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 16px;
 }
 
 .card {
-    width: 28rem;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
 }
 
 .quizCard {
-    width: 30rem !important;
+    width: 100%;
 }
 
 .myH1 {
-    padding-left: 32px;
-    padding-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 .cardAnswer:hover {
@@ -36,11 +45,11 @@ body {
 }
 
 .bg-success {
-    color: white !important;
+    color: white ;
 }
 
 .bg-danger {
-    color: white !important;
+    color: white ;
 }
 
 .width100 {
@@ -65,4 +74,36 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#progress-bar {
+    font-family: 'Raleway', sans-serif;
+    background-color: #662D3E;
+}
+
+.btn-primary {
+    background-color: #662D3E ;
+    border-color: #662D3E ;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.show>.btn-primary.dropdown-toggle {
+    background-color: #4B1F2C ;
+    border-color: #4B1F2C ;
+}
+
+
+@media (max-width: 520px) {
+
+    .card {
+        width: 100%;
+    }
+
+    .quizCard {
+        width: unset;
+    }
+
 }

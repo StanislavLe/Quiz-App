@@ -18,7 +18,7 @@
 
   <div class="container">
 
-    <div class="card" style="width: 30rem;">
+    <div class="card">
       <img id="quizBackground" src="./img/quizBackground.jpg" class="card-img-top" alt="...">
       <div class="card-body quizCard">
         <h5 id="cardTitel" class="card-title">Frage</h5>
@@ -39,7 +39,7 @@
           </div>
         </div>
 
-        <div id="questionBody" style="">
+        <div id="questionBody">
           <div class="card mb-2 cardAnswer card-body" onclick="answer('answer1')">
             <p id="answer1"></p>
           </div>
@@ -56,18 +56,18 @@
             <p id="answer4"></p>
           </div>
 
-          <div class="questionFooter"></div>
-          <b id="questionNumber"></b> von <b id="questionListLength"></b> Fragen
-          <button onclick="nextQuestion()" class="btn btn-primary" id="next-button" disabled>Nächste Frage</button>
-        </div>
+          <div class="questionFooter">
+            <b id="questionNumber"></b> von <b id="questionListLength"></b> Fragen
+            <button onclick="nextQuestion()" class="btn btn-primary" id="next-button" disabled>Nächste Frage</button>
+          </div>
 
-        <div class="progress" role="progressbar">
-          <div id="progress-bar" class="progress-bar" style="width: 0%"></div>
+          <div class="progress" role="progressbar">
+            <div id="progress-bar" class="progress-bar" style="width: 0%"></div>
 
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
 </body>
 
